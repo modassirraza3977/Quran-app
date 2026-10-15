@@ -1,0 +1,40 @@
+  name: quran_info_app
+description: "A Cricbuzz-inspired information-dense Quran mobile app."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # State Management & DI
+  flutter_riverpod: ^2.5.1
+
+  # Local Persistence & SQLite (Offline-First)
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+
+  # Fonts & Icons
+  google_fonts: ^6.2.1
+  lucide_icons: ^0.257.0
+
+  # Audio & Sharing (Phases 3-5)
+  just_audio: ^0.9.36
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/fonts/
